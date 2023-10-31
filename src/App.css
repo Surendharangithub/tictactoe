@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: #1a1a1a;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  color: #fff;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+div{
+  color: #1a1a1a;
+}
+.cell {
+  border-radius:8px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
+  font-size: 2.5rem;
+  border: 2px solid transparent;
+  width: 100px;
+  height: 100px;
+  gap: 10px;
+  background-color: beige;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+h1 {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.boxes {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-gap: 10px;
+  grid: 100px / auto auto auto;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: beige;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  margin-top: 10px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cell:hover {
+  border: 2px solid rgb(130, 121, 121);
+}
+.red {
+  color: red;
+  background-color: red;
+}
+.black {
+  color: #1a1a1a;
+}
+.btn {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  background-color: #1a73e8;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  font-size: 18px;
+  color: whitesmoke;
+}
+.xback {
+  background-color: #8db2e2b9;
+  color: #fff;
+}
+.oback {
+  background-color: rgba(233, 158, 234, 0.672);
+  color: #fff;
+}
+h3,h2{
+  color: #e5e2e2;
+  font-size: 28px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+h2{
+  margin-bottom: 10px;
+}
+span{
+  color: #1a73e8;
 }
